@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h3>1. 서블릿</h3>
+        <ul>
+            <li><a href="/test?msg=servlet">test 서블릿 호출</a></li>
+            <li>HttpServletRequest
+                <ul>
+                    <li><a href="/request-info">request 정보 조회</a></li>
+                    <li>HTTP 요청 데이터 전송
+                        <ul>
+                            <li><a href="/request-param?username=kimcoding&age=20&hobby=운동&hobby=음악감상">GET - 쿼리 파라미터</a></li>
+                            <li>
+                                <form action="/request-param" method="post">
+                                    username: <input type="text" name="username" /> <br>
+                                    age:      <input type="text" name="age" /><br>
+                                    hobby: 운동 <input type="checkbox" name="hobby" value="운동">
+                                           영화감상<input type="checkbox" name="hobby" value="영화감상">
+                                           음악감상<input type="checkbox" name="hobby" value="음악감상"><br>
+                                    <button type="submit">POST - html form</button>
+                                </form>
+                            </li>
+                            <li>HTTP API - MessageBody -> Postman 테스트를 통해서 진행</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>HttpServletResponse
+                <ul>
+                    <li><a href="/response-info">response 정보 조회</a></li>
+                    <li>HTTP 요청 메시지 바디 조회
+                        <ul>
+                            <li><a href="/response-html">HTML 응답</a></li>
+                            <li><a href="/response-json">HTTP API JSON 응답</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+
+        <li>서블릿
+            <ul>
+                <li><a href="/servlet/members/new-form">회원가입</a></li>
+                <li><a href="/servlet/members">회원목록</a></li>
+            </ul>
+        </li>
+        <li>JSP
+            <ul>
+                <li><a href="/jsp/members/new-form.jsp">회원가입</a></li>
+                <li><a href="/jsp/members.jsp">회원목록</a></li>
+            </ul>
+        </li>
+        <li>서블릿 MVC
+            <ul>
+                <li><a href="/servlet-mvc/members/new-form">회원가입</a></li>
+                <li><a href="/servlet-mvc/members">회원목록</a></li>
+            </ul>
+        </li>
+        <li>FrontController - v1
+            <ul>
+                <li><a href="/front-controller/v1/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v1/members">회원목록</a></li>
+            </ul>
+        </li>
+        <li>FrontController - v2
+            <ul>
+                <li><a href="/front-controller/v2/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v2/members">회원목록</a></li>
+            </ul>
+        </li>
+        <li>FrontController - v3
+            <ul>
+                <li><a href="/front-controller/v3/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v3/members">회원목록</a></li>
+            </ul>
+        </li>
+        <li>FrontController - v4
+            <ul>
+                <li><a href="/front-controller/v4/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v4/members">회원목록</a></li>
+            </ul>
+        </li>
+        <li>FrontController - v5 - v3
+            <ul>
+                <li><a href="/front-controller/v5/v3/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v5/v3/members">회원목록</a></li>
+            </ul>
+        </li>
+        <li>FrontController - v5 - v4
+            <ul>
+                <li><a href="/front-controller/v5/v4/members/new-form">회원가입</a></li>
+                <li><a href="/front-controller/v5/v4/members">회원목록</a></li>
+            </ul>
+        </li>
+        <li>SpringMVC - v1
+            <ul>
+                <li><a href="/springmvc/v1/members/new-form">회원가입</a></li>
+                <li><a href="/springmvc/v1/members">회원목록</a></li>
+            </ul>
+        </li>
+        <li>SpringMVC - v2
+            <ul>
+                <li><a href="/springmvc/v2/members/new-form">회원가입</a></li>
+                <li><a href="/springmvc/v2/members">회원목록</a></li>
+            </ul>
+        </li>
+        <li>SpringMVC - v3
+            <ul>
+                <li><a href="/springmvc/v3/members/new-form">회원가입</a></li>
+                <li><a href="/springmvc/v3/members">회원목록</a></li>
+            </ul>
+        </li>
+    </div>
+</body>
+</html>
